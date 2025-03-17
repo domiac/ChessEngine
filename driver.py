@@ -1,12 +1,13 @@
 # This file is the main app driver.
 
-import board_mechanics
+from board_mechanics import Board
 
 
 
 
 def main():
-    print(board_mechanics.board())
+    b = Board()
+    print(b.board_init())
 
 
 
