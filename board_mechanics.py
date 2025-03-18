@@ -23,11 +23,10 @@ class Board():
                             [0,0,0,0,0,0,0,0],
                             [0,0,0,0,0,0,0,0],
                             [0,0,0,0,0,0,0,0],
-                            [0,0,0,0,0,0,0,0],
+                            [0,-self.p['R'],0,0,0,0,0,0],
                             [self.p['P'], self.p['P'], self.p['P'], self.p['P'], self.p['P'], self.p['P'], self.p['P'], self.p['P']],
                             [self.p['R'], self.p['N'], self.p['B'], self.p['Q'], self.p['K'], self.p['B'], self.p['N'], self.p['R']]])
         return baseBoard
-
 
     def update_board(self):
         pass
