@@ -1,16 +1,12 @@
 # This file is the main app driver.
-
-from board_mechanics import Board
-from moves import piece_moves
-
-
+import chess
+from move_generator import Analyzer
 
 
 def main():
-    b = Board()
-    board = b.board_init()
-    p = piece_moves()
-    print(p.pawn_take_right(board, 6, 0))
+    board = chess.Board()
+    analyzer = Analyzer(depth=2)  # Create an instance of Analyzer with a depth of 3
+    analyzer.move_analyzer(board)
 
 
 
